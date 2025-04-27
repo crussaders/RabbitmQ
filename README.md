@@ -29,3 +29,5 @@ Project to demonstrate Rabbitmq with springboot
 * can be created via class 
 * or, can be added in application.yml / application.properties
 
+# Publisher setup
+# Cosumer setup
