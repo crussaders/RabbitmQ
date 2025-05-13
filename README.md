@@ -31,3 +31,15 @@ Project to demonstrate Rabbitmq with springboot
 
 # Publisher setup
 # Cosumer setup
+
+# Publishing JSON message to Queue
+
+* Dependency
+<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-json -->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-json</artifactId>
+    <version>3.4.5</version>
+</dependency>
+
+* In RabbitMQConfig make the necessry changes for conversion to JSON
