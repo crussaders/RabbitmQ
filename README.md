@@ -43,3 +43,7 @@ Project to demonstrate Rabbitmq with springboot
 </dependency>
 
 * In RabbitMQConfig make the necessry changes for conversion to JSON
+
+# Created a DirectExchange with name "Direct Exchange"
+* created Queue Mobile,TV, AC
+* added the binding for each queue with it's routing key mobile,tv,ac respectively.

@@ -16,6 +16,11 @@ public class RabbitMsgPublisher {
         System.out.println("Sent Message: " + message);
     }
 
+    public void directPublish(Message message) {
+        rabbitTemplate.convertAndSend("Direct-Exchange","mobile", message);
+        System.out.println("Direct-message: " + message );
+    }
+
 //
 //    public void sendMessage(String message) {
 //        rabbitTemplate.convertAndSend("", RabbitMQConfig.QUEUE_NAME, message);

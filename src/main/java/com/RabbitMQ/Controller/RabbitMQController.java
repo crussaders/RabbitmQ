@@ -19,7 +19,8 @@ public class RabbitMQController {
 //    }
 @PostMapping("/publish")
 public String publishMessage(@RequestBody Message message) {
-    rabbitMsgPublisher.sendMessage(message);
+//    rabbitMsgPublisher.sendMessage(message);
+    rabbitMsgPublisher.directPublish(message);
     return "Message Published: " + message;
 }
 }
