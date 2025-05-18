@@ -47,3 +47,6 @@ Project to demonstrate Rabbitmq with springboot
 # Created a DirectExchange with name "Direct Exchange"
 * created Queue Mobile,TV, AC
 * added the binding for each queue with it's routing key mobile,tv,ac respectively.
+
+# Created a FanOut Exchange with name "Fanout-Exchange"
+* Binding the Fanout-Exchange to Mobile and AC queue and not TV queue

@@ -19,7 +19,12 @@ public class RabbitMsgPublisher {
     public void directPublish(Message message) {
 
         rabbitTemplate.convertAndSend("Direct-Exchange",message.getKeys(), message);
-        System.out.println("Direct-message: " + message );
+        System.out.println("Direct-Exchange: " + message );
+    }
+
+    public void fanoutPublish(Message message) {
+        rabbitTemplate.convertAndSend("Fanout-Exchange","",message);
+        System.out.println("Fanout-Exchange: " + message);
     }
 
 //
