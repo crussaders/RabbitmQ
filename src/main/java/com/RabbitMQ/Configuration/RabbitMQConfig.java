@@ -27,10 +27,19 @@ public class RabbitMQConfig {
 //    public List<Queue> queue() {
 //        return QUEUE_NAMES.stream().map(name -> new Queue(name, true)).collect(Collectors.toList());
 //    }
-@Bean
-public Queue queueMobile() {
-    return new Queue(QUEUE_NAME_MOBILE, true);
-}
+    @Bean
+    public Queue queueMobile() {
+        return new Queue(QUEUE_NAME_MOBILE, true);
+    }
+    @Bean
+    public Queue queueTV() {
+        return new Queue(QUEUE_NAME_TV, true);
+    }
+    @Bean
+    public Queue queueAC() {
+        return new Queue(QUEUE_NAME_AC, true);
+    }
+
 
     //for conversion of messages to JSON
 

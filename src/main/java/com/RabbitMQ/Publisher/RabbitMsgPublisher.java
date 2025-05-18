@@ -17,7 +17,8 @@ public class RabbitMsgPublisher {
     }
 
     public void directPublish(Message message) {
-        rabbitTemplate.convertAndSend("Direct-Exchange","mobile", message);
+
+        rabbitTemplate.convertAndSend("Direct-Exchange",message.getKeys(), message);
         System.out.println("Direct-message: " + message );
     }
 
