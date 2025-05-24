@@ -55,3 +55,9 @@ Project to demonstrate Rabbitmq with springboot
 * created the binding for Mobile queue, with routing key as "*.mobile.*"
 * created the binding for TV queue, with routing key as "*.tv.*"
 * created the binding for AC queue, with routing key as "#.ac."
+
+# Created a Header Exchange with name "Header-Exchange"
+* created the binding for Mobile queue with Arguments
+* x-match = any
+* item1 = mobile
+* item2 = mob
