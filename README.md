@@ -50,3 +50,8 @@ Project to demonstrate Rabbitmq with springboot
 
 # Created a FanOut Exchange with name "Fanout-Exchange"
 * Binding the Fanout-Exchange to Mobile and AC queue and not TV queue
+
+# Created a Topic Exchange with name "Topic-Exchange"
+* created the binding for Mobile queue, with routing key as "*.mobile.*"
+* created the binding for TV queue, with routing key as "*.tv.*"
+* created the binding for AC queue, with routing key as "#.ac."

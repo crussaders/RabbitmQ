@@ -16,6 +16,7 @@ public class RabbitMQConfig {
     public static final String QUEUE_NAME_MOBILE = "Mobile";
     public static final String QUEUE_NAME_TV = "TV";
     public static final String QUEUE_NAME_AC = "AC";
+    public static final String QUEUE_NAME_TOPIC = "AC";
     public static final List<String> QUEUE_NAMES = List.of(QUEUE_NAME_MOBILE,QUEUE_NAME_TV,QUEUE_NAME_AC);
 
 //    @Bean

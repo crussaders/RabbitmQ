@@ -34,6 +34,13 @@ public class RabbitMsgConsumer {
         System.out.println("Received message AC: " + message);
     }
 
+//    not needed
+//    @RabbitListener(queues = RabbitMQConfig.QUEUE_NAME_TOPIC)
+//    public void receiveMessageTopic(Message message) {
+//        messageProcess(message);
+//        System.out.println("Received message AC: " + message);
+//    }
+
     public void messageProcess(Message message) {
         String firstname = message.getFirstName();
         if(!firstname.equals(firstname.toUpperCase())) {

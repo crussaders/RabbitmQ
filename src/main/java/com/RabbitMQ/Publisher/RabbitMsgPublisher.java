@@ -26,6 +26,10 @@ public class RabbitMsgPublisher {
         rabbitTemplate.convertAndSend("Fanout-Exchange","",message);
         System.out.println("Fanout-Exchange: " + message);
     }
+    public void topicPublish(Message message) {
+        rabbitTemplate.convertAndSend("Topic-Exchange","tv.mobile.ac",message);
+        System.out.println("Topic-Exchange: " + message);
+    }
 
 //
 //    public void sendMessage(String message) {
