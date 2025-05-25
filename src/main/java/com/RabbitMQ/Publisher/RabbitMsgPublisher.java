@@ -47,7 +47,7 @@ public class RabbitMsgPublisher {
 //        MessageProperties props = new MessageProperties();
 //        props.setContentType("application/json");
 //
-//        // ✅ Set your custom headers
+//        // Set your custom headers
 //        Map<String, Object> headersMap = new HashMap<>();
 //        headersMap.put("item1", "mobile");
 //        headersMap.put("item2", "television");
